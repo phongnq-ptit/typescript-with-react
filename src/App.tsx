@@ -11,8 +11,6 @@ function App() {
 
   const [todos, setTodos] = useState<ITodo[]>([])
 
-  const [textEdit, setTextEdit] = useState<ITodo>()
-
   return (
     <div className='container'>
       <div className="app-wrapper">
@@ -20,10 +18,10 @@ function App() {
           <Header />
         </div>
         <div>
-          <Form text={text} setText={setText} todos={todos} setTodos={setTodos} textEdit={textEdit as ITodo} setTextEdit={setTextEdit as React.Dispatch<React.SetStateAction<ITodo>>} />
+          <Form text={text} setText={setText} todos={todos} setTodos={setTodos} />
         </div>
         <div>
-          <Todolist todos={todos} setTodos={setTodos} textEdit={textEdit as ITodo} setTextEdit={setTextEdit as React.Dispatch<React.SetStateAction<ITodo>>} />
+          <Todolist todos={todos} setTodos={setTodos} />
         </div>
       </div>
     </div>

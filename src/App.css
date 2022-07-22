@@ -41,6 +41,18 @@
   border-radius: 10px;
 }
 
+.input-edit {
+  outline: none;
+  width: 260px;
+  padding: 6px 16px;
+  margin-right: 20px;
+  font-size: 20px;
+  color: #ccc;
+  background-color: #000000;
+  border: 1px solid #c89666;
+  border-radius: 10px;
+}
+
 .button-add {
   width: 70px;
   padding: 15px 15px;
@@ -83,6 +95,21 @@
 
 .button-delete {
   margin-left: 8px;
+}
+
+.btn-update {
+  border: none;
+  font-size: 16px;
+  padding: 4px 12px;
+  border-radius: 10px;
+  background-color: cadetblue;
+  color: #ccc;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-update:hover {
+  background-color: #12343b;
 }
 
 .complete {
